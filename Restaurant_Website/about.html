@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Restro Luxury Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header will load here -->
+        <div id="header"></div>
+
+        <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        </script>
+
+    <header class="about-hero">
+        <div class="hero-overlay">
+            <span class="gold-text">Est. 1998</span>
+            <h1>Our Culinary Journey</h1>
+            <p>A legacy of taste, tradition, and innovation.</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="about-row">
+           <div class="about-image">
+    <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop" alt="Restaurant Interior">
+    </div>
+</div>
+            <div class="about-content">
+                <span class="gold-text">The Heritage</span>
+                <h3>Crafting Memories for Over Two Decades</h3>
+                <p>What started as a small family kitchen in the heart of the city has evolved into a sanctuary for food lovers. We believe that a meal is more than just sustenance; it’s a celebration of culture and craftsmanship.</p>
+                <p>Every spice is hand-picked, and every recipe tells a story of our travels across the globe, bringing authentic world flavors to your plate with a modern twist.</p>
+                <span class="signature">Joan Smith</span>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years of Legacy</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Master Chefs</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">45k</span>
+                <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">08</span>
+                <span class="stat-label">Global Awards</span>
+            </div>
+        </div>
+
+        <div class="mission-section">
+            <div class="mission-card">
+                <div class="icon-circle">🎯</div>
+                <h4>Our Mission</h4>
+                <p>To redefine the fine-dining experience by blending traditional cooking techniques with sustainable, locally-sourced ingredients.</p>
+            </div>
+            <div class="mission-card">
+                <div class="icon-circle">👁️</div>
+                <h4>Our Vision</h4>
+                <p>To become a global benchmark for culinary excellence and hospitality, where every guest leaves with a story to tell.</p>
+            </div>
+        </div>
+    </section>
+    <div class="section-intro" style="margin-top: 100px;">
+            <span class="gold-text">The Restro Way</span>
+            <h2>Principles We Live By</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <span class="value-number">01</span>
+                <h4>Uncompromising Quality</h4>
+                <p>We believe that luxury starts with the source. From Wagyu beef to hand-pressed olive oils, we never settle for second best.</p>
+            </div>
+            <div class="value-item">
+                <span class="value-number">02</span>
+                <h4>Sustainable Sourcing</h4>
+                <p>90% of our produce is sourced from farmers within a 100-mile radius, reducing our carbon footprint and supporting the community.</p>
+            </div>
+            <div class="value-item">
+                <span class="value-number">03</span>
+                <h4>Inclusive Hospitality</h4>
+                <p>Whether it's your first visit or your fiftieth, every guest is treated like royalty with personalized service.</p>
+            </div>
+        </div>
+
+        <div class="section-intro" style="margin-top: 100px;">
+            <span class="gold-text">Masterminds</span>
+            <h2>Our Culinary Team</h2>
+        </div>
+        <div class="chef-grid">
+            <div class="chef-card">
+                <div class="chef-img">
+                    <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=400&auto=format&fit=crop" alt="Executive Chef">
+                </div>
+                <div class="chef-info">
+                    <h4>Marcus Vane</h4>
+                    <span class="gold-text">Executive Chef</span>
+                    <p>With 15 years in Michelin-starred kitchens, Marcus brings a scientific precision to every plate.</p>
+                </div>
+            </div>
+            <div class="chef-card">
+                <div class="chef-img">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=500&auto=format&fit=crop" alt="Sous Chef">
+                </div>
+                <div class="chef-info">
+                    <h4>Elena Rossi</h4>
+                    <span class="gold-text">Sous Chef</span>
+                    <p>A specialist in Mediterranean fusion, Elena ensures every dish is a visual and flavor masterpiece.</p>
+                </div>
+            </div>
+            <div class="chef-card">
+                <div class="chef-img">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400&auto=format&fit=crop" alt="Pastry Chef">
+                </div>
+                <div class="chef-info">
+                    <h4>Julian Sato</h4>
+                    <span class="gold-text">Pastry Chef</span>
+                    <p>Combining Japanese aesthetics with French techniques, Julian’s desserts are the highlight of the night.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h3>Experience the Legacy Firsthand</h3>
+            <p>Ready to taste the extraordinary? Book your table for tonight.</p>
+            <a href="resevation.html" class="btn-gold">Reserve Now</a>
+        </div>
+
+    </section> 
+    
+<div id="footer"></div>
+
+        <script>
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+        </script>
+</body>
+</html>

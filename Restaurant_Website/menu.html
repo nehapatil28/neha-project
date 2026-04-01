@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Golden Spice Nashik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="menu-page">
+     <!-- Header will load here -->
+        <div id="header"></div>
+
+        <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        </script>
+   
+
+    <header class="menu-header">
+        <div class="header-content">
+            <h1>Our <span class="gold-text">Exquisite</span> Menu</h1>
+            <p>A fusion of traditional Nashik spices and modern culinary art.</p>
+        </div>
+    </header>
+
+    <main class="menu-main">
+    <div class="menu-categories">
+        <button class="filter-btn active" data-target="all">All Dishes</button>
+        <button class="filter-btn" data-target="starters">Starters</button>
+        <button class="filter-btn" data-target="main">Main Course</button>
+        <button class="filter-btn" data-target="special">Nashik Special</button>
+    </div>
+
+                    <div class="menu-display">
+                        <div class="menu-card" data-category="starters">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80" alt="Paneer Tikka">
+                                <div class="veg-tag"><span class="dot veg"></span> Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Paneer Tikka Angara</h3>
+                                    <span class="price">₹320</span>
+                                </div>
+                                <p>Smoky cottage cheese cubes marinated in our secret black masala.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="starters">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=600&q=80" alt="Tandoori Platter">
+                                <div class="veg-tag"><span class="dot non-veg"></span> Non-Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Tandoori Royal Platter</h3>
+                                    <span class="price">₹750</span>
+                                </div>
+                                <p>An assortment of charcoal-grilled kebabs, tikkas, and tandoori prawns.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="main">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80" alt="Biryani">
+                                <div class="veg-tag"><span class="dot non-veg"></span> Non-Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Chicken Dum Biryani</h3>
+                                    <span class="price">₹420</span>
+                                </div>
+                                <p>Authentic Dum Biryani served with spicy salan and cooling raita.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="main">
+                            <div class="card-img">
+                                <img src="images/image_5.jpg" alt="Lamb Rogan Josh">
+                                <div class="veg-tag"><span class="dot non-veg"></span> Non-Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Lamb Rogan Josh</h3>
+                                    <span class="price">₹650</span>
+                                </div>
+                                <p>Slow-cooked lamb in a rich, traditional Kashmiri red gravy.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="special">
+                            <div class="card-img">
+                                <img src="images/misal_3.jpg" alt="Nashik Special Misal" onerror="this.src='https://images.unsplash.com/photo-1626132646529-5003375a9541?q=80&w=600'">
+                                <div class="veg-tag"><span class="dot veg"></span> Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Special Nashik Misal</h3>
+                                    <span class="price">₹180</span>
+                                </div>
+                                <p>The legendary spicy Nashik misal served with buttered pav and onion lemon.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="main">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1606471191009-63994c53433b?auto=format&fit=crop&w=600&q=80" alt="Mutton">
+                                <div class="veg-tag"><span class="dot non-veg"></span> Non-Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Mutton Kala Rassa</h3>
+                                    <span class="price">₹550</span>
+                                </div>
+                                <p>Slow-cooked mutton in a rich, dark gravy made with roasted spices.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                            <div class="menu-card" data-category="starters">
+                                <div class="card-img">
+                                    <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=600&q=80" alt="Hara Bhara Kabab">
+                                    <div class="veg-tag"><span class="dot veg"></span> Veg</div>
+                                </div>
+                                <div class="card-info">
+                                    <div class="title-price">
+                                        <h3>Hara Bhara Kabab</h3>
+                                        <span class="price">₹280</span>
+                                    </div>
+                                    <p>Crispy spinach and green pea patties with a hint of roasted ginger.</p>
+                                    <button class="add-to-cart">Add to Order</button>
+                                </div>
+                            </div>
+
+                            <div class="menu-card" data-category="main">
+                                <div class="card-img">
+                                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80" alt="Butter Chicken">
+                                    <div class="veg-tag"><span class="dot non-veg"></span> Non-Veg</div>
+                                </div>
+                                <div class="card-info">
+                                    <div class="title-price">
+                                        <h3>Royal Butter Chicken</h3>
+                                        <span class="price">₹480</span>
+                                    </div>
+                                    <p>Charcoal-grilled chicken in a silky tomato gravy with dried fenugreek.</p>
+                                    <button class="add-to-cart">Add to Order</button>
+                                </div>
+                            </div>
+                        <div class="menu-card" data-category="starters">
+                    <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?auto=format&fit=crop&w=600&q=80" alt="Murgh Rozali Kabab">
+                            <div class="veg-tag"><span class="dot non-veg"></span> Non-Veg</div>
+                        </div>
+                        <div class="card-info">
+                            <div class="title-price">
+                                <h3>Murgh Rozali Kabab</h3>
+                                <span class="price">₹380</span>
+                            </div>
+                            <p>Chicken breast stuffed with minced lamb and cheese, glazed in the tandoor.</p>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                        </div>
+                    <div class="menu-card" data-category="special">
+                        <div class="card-img">
+                            <img src="images/image_4.jpg" 
+                                alt="Butter Pav Bhaji" 
+                                onerror="this.src='https://images.unsplash.com/photo-1626132646529-5003375a9541?q=80&w=600'">
+                            <div class="veg-tag"><span class="dot veg"></span> Veg</div>
+                        </div>
+                        <div class="card-info">
+                            <div class="title-price">
+                                <h3>Special Butter Pav Bhaji</h3>
+                                <span class="price">₹240</span>
+                            </div>
+                            <p>A spicy blend of mashed vegetables cooked in butter, served with two soft, toasted pavs.</p>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+
+                        <div class="menu-card" data-category="special">
+                            <div class="card-img">
+                                <img src="images/image_2.jpg" 
+                                    alt="Ukadiche Modak" 
+                                    onerror="this.src='https://images.unsplash.com/photo-1662557343714-3652613d772c?q=80&w=600'">
+                                <div class="veg-tag"><span class="dot veg"></span> Veg</div>
+                            </div>
+                            <div class="card-info">
+                                <div class="title-price">
+                                    <h3>Ukadiche Modak (2 Pcs)</h3>
+                                    <span class="price">₹140</span>
+                                </div>
+                                <p>Hand-crafted steamed rice flour dumplings stuffed with fresh coconut and jaggery.</p>
+                                <button class="add-to-cart">Add to Order</button>
+                            </div>
+                        </div>
+
+                    <div class="menu-card" data-category="special">
+                        <div class="card-img">
+                            <img src="images/image_1.jpg" alt="Gulab Jamun">
+                            <div class="veg-tag"><span class="dot veg"></span> Sweet</div>
+                        </div>
+                        <div class="card-info">
+                            <div class="title-price">
+                                <h3>Shahi Gulab Jamun</h3>
+                                <span class="price">₹120</span>
+                            </div>
+                            <p>Two oversized, melt-in-your-mouth khoya dumplings soaked in rose-cardamom syrup.</p>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            // Optimized Filtering Script
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.menu-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button state
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Get category and filter cards
+                    const target = btn.getAttribute('data-target');
+                    cards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        
+                        if (target === 'all' || category === target) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <div id="footer"></div>
+
+                <script>
+                fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+                </script>
+    </body>
+</html>

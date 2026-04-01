@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Reviews | Golden Spice Nashik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="reviews-page">
+
+    <div id="header"></div> <section class="contact-hero" style="height: 35vh;">
+        <div class="header-content">
+            <h1>Guest <span class="gold-text">Reviews</span></h1>
+            <p>Your feedback is the secret ingredient to our success.</p>
+        </div>
+    </section>
+
+    <main class="container section-padding">
+        <div class="reviews-layout">
+            
+            <div class="review-form-container">
+                <div class="form-card">
+                    <h3>Share Your Experience</h3>
+                    <p>How was your meal at Golden Spice?</p>
+                    
+                    <form id="reviewForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="userName" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" name="stars" id="star5" value="5"><label for="star5">★</label>
+                                <input type="radio" name="stars" id="star4" value="4"><label for="star4">★</label>
+                                <input type="radio" name="stars" id="star3" value="3"><label for="star3">★</label>
+                                <input type="radio" name="stars" id="star2" value="2"><label for="star2">★</label>
+                                <input type="radio" name="stars" id="star1" value="1"><label for="star1">★</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Favorite Dish</label>
+                            <select id="favDish">
+                                <option value="Special Nashik Misal">Special Nashik Misal</option>
+                                <option value="Golden Thali">Golden Thali</option>
+                                <option value="Paneer Tikka">Paneer Tikka</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Your Review</label>
+                            <textarea id="userComment" rows="4" placeholder="Tell us about the taste, service, and vibe..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-solid-gold">Post Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="review-feed">
+                <div class="feed-header">
+                    <h3>Recent <span class="gold-text">Feedback</span></h3>
+                </div>
+                <div id="reviewsList" class="reviews-list-container">
+                    <div class="review-card">
+                        <div class="user-info">
+                            <div class="user-initial">E</div>
+                            <div>
+                                <h4>Emma R.</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"The Misal Pav is legendary! Perfect balance of spice."</p>
+                        <small class="dish-tag">Ate: Special Nashik Misal</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="reviews.js"></script>
+    <script>
+        // Header Loader
+        fetch("header.html").then(res => res.text()).then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+    </script>
+</body>
+</html>

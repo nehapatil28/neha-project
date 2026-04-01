@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wilma | Premium Events & Dining</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header will load here -->
+        <div id="header"></div>
+
+        <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        </script>
+
+    <header class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h6 class="text-gold tracking-widest text-uppercase mb-3">Welcome to The Wilma</h6>
+            <h1 class="display-1 serif-text text-white">Unforgettable Moments</h1>
+            <p class="lead text-white-50 mb-5">Crafting bespoke experiences with a touch of elegance.</p>
+            <a href="#events-grid" class="btn btn-gold rounded-0 px-5 py-3">Explore Our Services</a>
+        </div>
+    </header>
+
+    <section class="events-feature py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 position-relative mb-5 mb-lg-0">
+                    <div class="event-image-container">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=800" alt="Gala" class="img-fluid event-main-img">
+                        <div class="leaf-overlay">
+                            <img src="https://www.transparentpng.com/download/tropical-leaves/tropical-green-leaves-png-9.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <h6 class="text-gold tracking-widest text-uppercase mb-3">Private Dining</h6>
+                    <h2 class="display-4 serif-text text-white mb-4">A taste that yearns to be <span class="fst-italic text-gold">savored</span></h2>
+                    <p class="text-secondary mb-5">Whether it’s an intimate anniversary or a high-stakes business dinner, our private rooms provide the perfect backdrop for meaningful connection.</p>
+                    <div class="divider-wrap mb-4">
+                        <svg width="120" height="24" viewBox="0 0 120 24" fill="none"><path d="M0 12C20 12 20 2 40 2C60 2 60 22 80 22C100 22 100 12 120 12" stroke="#C5A059" stroke-width="1.5"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events-grid" class="py-5 bg-black-lighter">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="serif-text text-white display-5">Events We Provide</h2>
+                <div class="gold-line mx-auto"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=600" alt="Weddings" class="img-fluid">
+                        </div>
+                        <div class="card-body-custom">
+                            <h4 class="serif-text text-white">Weddings & Galas</h4>
+                            <p class="text-white">Turn your dream celebration into a reality with our full-service planning and gourmet catering.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600" alt="Corporate" class="img-fluid">
+                        </div>
+                        <div class="card-body-custom">
+                            <h4 class="serif-text text-white">Corporate Events</h4>
+                            <p class="text-white">Sophisticated spaces designed for product launches, seminars, and networking mixers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=600" alt="Cocktails" class="img-fluid">
+                        </div>
+                        <div class="card-body-custom">
+                            <h4 class="serif-text text-white">Cocktail Soirées</h4>
+                            <p class="text-white">An evening of masterfully crafted drinks and artisanal hors d'oeuvres in a chic setting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <div class="event-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=600" 
+                            alt="Live Music Concert" class="img-fluid">
+                    </div>
+                    <div class="card-body-custom">
+                        <h4 class="serif-text text-white">Singing Concerts</h4>
+                        <p class="text-white">Experience an evening of soul-stirring melodies and live performances by world-class vocalists in an acoustic-perfect setting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                    <div class="event-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&q=80&w=800" alt="Gallery Lighting" class="img-fluid">
+                        </div>
+                        <div class="card-body-custom">
+                            <h4 class="serif-text text-white">Art Exhibitions</h4>
+                            <p class="text-white">A curated space for contemporary creators to showcase their vision in a minimalist, high-end gallery environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?auto=format&fit=crop&q=80&w=600" alt="Fashion Show" class="img-fluid">
+                        </div>
+                        <div class="card-body-custom">
+                            <h4 class="serif-text text-white">Fashion Shows</h4>
+                            <p class="text-white">From the runway to the after-party, we provide the lighting, sound, and luxury seating required for elite fashion events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+        <script>
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+        </script>
+</body>
+</html>

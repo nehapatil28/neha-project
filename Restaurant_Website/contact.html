@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Golden Spice | Nashik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="contact-page">
+
+    <!-- Header will load here -->
+        <div id="header"></div>
+
+        <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        </script>
+
+    <header class="contact-hero">
+        <div class="header-overlay">
+            <h1>Get in <span class="gold-text">Touch</span></h1>
+            <p>Visit us in the wine capital of India, Nashik.</p>
+        </div>
+    </header>
+
+    <section class="contact-wrap">
+        <div class="contact-grid">
+            
+            <div class="contact-details">
+                <div class="detail-box">
+                    <i class="fas fa-location-dot"></i>
+                    <h3>Our Address</h3>
+                    <p>Pathardi Phata, Nashik, Maharashtra 422010</p>
+                </div>
+                <div class="detail-box">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Email Us</h3>
+                    <p>hello@goldenspice-nashik.com</p>
+                </div>
+                <div class="detail-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p>Daily: 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+
+              <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60010.74148762516!2d73.7431110783203!3d19.9382216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd95738814571b%3A0x6739933993393393!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1711800000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+           </div>
+
+        </div>
+
+        <div class="message-section">
+            <div class="form-card">
+                <h2>Send a Message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <textarea placeholder="Write your message here..." rows="5" required></textarea>
+                    <button type="submit" class="btn-solid-gold">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+        <script>
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+        </script>
+
+</body>
+</html>
